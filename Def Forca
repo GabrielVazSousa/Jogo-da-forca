@@ -1,0 +1,13 @@
+def forca():
+    forca = turtle.Turtle()    
+    forca.hideturtle()
+    forca.penup()
+    forca.setpos(-200,-100)
+    forca.pendown()    
+    forca.pensize(5)
+    forca.left(90)
+    forca.forward(200)
+    forca.right(90)
+    forca.forward(60)
+    forca.right(90)
+    forca.forward(20)
