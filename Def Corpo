@@ -1,0 +1,9 @@
+def corpo():
+    forca = turtle.Turtle()    
+    forca.hideturtle()
+    forca.pensize(5)
+    forca.penup()
+    forca.setpos(-140,40)
+    forca.pendown()
+    forca.right(90)
+    forca.forward(60)  
