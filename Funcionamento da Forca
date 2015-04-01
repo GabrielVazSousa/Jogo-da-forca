@@ -1,0 +1,32 @@
+forca = turtle.Turtle()
+        forca.clear()
+        senha = ""    
+        for letra in palavra:
+             senha += letra if letra in acertos else "  " if letra == (" ") else "_ "
+        
+        forca.hideturtle()    
+        forca.penup()    
+        forca.setpos(-230,-200)       
+        forca.write(senha, move=False, align="left", font=("Arial", 45, "normal"))
+        
+        if senha == palavra:
+            forca.clear()            
+            ganhou = turtle.Turtle()
+            ganhou.hideturtle()
+            ganhou.penup()    
+            ganhou.setpos(-200,-200)    
+            ganhou.write('Voce ganhou!', move=False, align="left", font=("Arial", 45, "normal"))
+            break
+        tentativa= janela.textinput('','Digite uma letra ').lower().strip()
+        if tentativa == ('exit')      
+            break
+        if tentativas in digitadas:
+            forca.clear()
+            print('voce ja digitou essa palavra')
+            continue
+        else:
+            digitadas += tentativa
+            forca.clear()
+            if tentativa in palavra:
+                acertos += tentativa
+                forca.clear()
