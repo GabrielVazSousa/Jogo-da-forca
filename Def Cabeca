@@ -1,0 +1,10 @@
+def cabeca():
+    forca = turtle.Turtle()   
+    forca.speed(10)    
+    forca.hideturtle()
+    forca.pensize(5)
+    forca.penup()    
+    forca.setpos(-140,80)
+    forca.left(180)    
+    forca.pendown()
+    forca.circle(20)
