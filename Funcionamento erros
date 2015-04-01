@@ -1,0 +1,21 @@
+erros = erros + 1
+        if erros == 1:
+            cabeca()
+        elif erros == 2:
+            corpo()
+        elif erros == 3:
+            bracod()
+        elif erros == 4:
+            bracoe()
+        elif erros == 5:
+            pernad()
+        elif erros == 6:
+            perdeu = turtle.Turtle()
+            pernae()
+            forca.clear()                
+            perdeu.hideturtle()
+            perdeu.penup()            
+            perdeu.setpos(-200,-200)
+            perdeu.write(palavra, move=False, align="left", font=("Arial", 45, "normal"))
+            perdeu.setpos(-70,0)
+            perdeu.write('voce perdeu', move=False, align="left", font=("Arial", 45, "normal"))
